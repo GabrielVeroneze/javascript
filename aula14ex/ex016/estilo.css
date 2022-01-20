@@ -19,6 +19,10 @@ section {
     box-shadow: 3px 3px 10px 2px rgba(0, 0, 0, 0.37); 
 }
 
+div#res {
+    margin: 15px 0px 0px 0px;
+}
+
 footer{
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
     width: 15px 0px 0px 0px;
