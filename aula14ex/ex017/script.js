@@ -10,6 +10,7 @@ function clicar() {
         for (var c = 0; c < 11; c += 1) {  
             var item = document.createElement('option')
             item.text = `${N} x ${c} = ${N*c}` 
+            item.value = `tab${c}`
             tab.appendChild(item)
         }
     }
