@@ -1,43 +1,25 @@
-
 Adic.addEventListener('click', adic)
 
-var Final = []
+var Valor = []
 
 function adic(){
     
-    let N = document.getElementById('txtN').value
-    let tab = document.getElementById('tabela')
-    
+    let Num = document.getElementById('Numero').value
+    let Lis = document.getElementById('lista')
+    let Com = Valor.includes(Num)
 
-    if (N < 1 || N > 100) {
+    Valor.push(Num)
+
+    if (Num < 1 || Num > 100 || Com == true) {
+
         window.alert('Valor inválido ou já encontrado na lista.')
+
     } else {
+
         let item = document.createElement('option')
-        item.text = `Valor ${N} adicionado.`
-        tab.appendChild(item)
-        Final.push(N)
+        item.text = `Valor ${Num} adicionado.`
+        Lis.appendChild(item)
+        
     }
 }
 
-
-
-
-/* 
-var Num = parseInt(document.getElementById('txtN').value)
-
-function Adicionar(N) {
-    
-    
-
-    if (N < 1 || N > 100) {
-        window.alert('Valor inválido ou já encontrado na lista.')
-    } else {
-        let item = document.createElement('option')
-        item.text = `Valor ${N} adicionado.`
-        tab.appendChild(item)
-        return N
-    }
-}
-
-let res = Adicionar(4)
-*/
