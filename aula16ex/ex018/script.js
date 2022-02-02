@@ -18,6 +18,8 @@ function adic(){
 Final.addEventListener('click', final)
 var Res = document.querySelector('div#res')
 
+
+
 function final(){
 
     Res.innerHTML += `Ao todo, temos ${Valor.length} números cadastrados.`
@@ -31,14 +33,18 @@ function final(){
         return Math.min.apply(Math, array);
     };
     Res.innerHTML += `<br>O menor valor informado foi ${Array.min(Valor)}.`
-
+    
     let soma = 0
     for (let i = 0; i < Valor.length; i++) {
-        soma = soma + Valor[i]
-    } 
-
+        soma = soma + Valor[i]    
+    }      
     Res.innerHTML += `<br>Somando todos os valores, temos ${soma}.`
+
+    let media = soma / Valor.length
+    Res.innerHTML += `<br>A média dos valores digitados é ${media}.`
 }
+/*
+
 
 /*
 let maior = Valor.reduce(function(a, b) {
