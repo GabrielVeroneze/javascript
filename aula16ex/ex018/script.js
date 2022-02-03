@@ -1,5 +1,6 @@
 Adic.addEventListener('click', adic)
 var Valor = []
+let apag = document.getElementById('Numero')
 
 function adic(){
     let Num = Number(document.getElementById('Numero').value)
@@ -13,6 +14,8 @@ function adic(){
         Lis.appendChild(item)
         Valor.push(Num)
     }
+    apag.value = ''
+    apag.focus()
 }
 
 Final.addEventListener('click', final)
