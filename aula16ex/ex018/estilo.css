@@ -24,11 +24,6 @@ select#lista {
     margin: 20px 0px 0px 0px;
 }
 
-div#res {
-    padding-top: 12px;
-    line-height: 2em;
-}
-
 footer{
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
     width: 15px 0px 0px 0px;
